@@ -1,0 +1,18 @@
+/* If the screen is less than 1200[px make the main nav bar disapear and show the hamburger menu */
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+    }
+}
+
+/* If the screen is less than 1200[px make the main nav bar disapear and show the hamburger menu */
+@media screen and (max-height: 1000px) {
+
+    #hamburger-nav, .hamburguer-menu {
+        padding: 10vh;
+    }
+}
