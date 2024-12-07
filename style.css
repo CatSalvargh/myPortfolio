@@ -173,7 +173,7 @@ section {
     min-height: fit-content; */
 }
 
-#profile, .section-container, #socials-container, .section-text-container {
+.section-container, #socials-container, .section-text-container {
     display: flex;   
 }
 
@@ -181,21 +181,21 @@ section {
     justify-items: center;
     align-items: center;
     gap: 2rem;
-    height: 80vh;
-    width: 96vw;
+    height: 96vh;
+    padding: 2em;
+    width: 100vw;
 }
 
 .section-container {
-    justify-self: center;
-    align-items: center;
-    justify-items: center;
-    height: 85vh;
+    align-content: center;
+    justify-content: center;
     gap: 2rem;
-    width: 100%;
+    width: 96vw;
 }
 
 .section-pic-container, .section-text-container {
-    max-width: 20vw;
+    max-width: 25vw;
+    max-height: 25vh;
 }
 
 img {
