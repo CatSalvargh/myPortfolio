@@ -9,56 +9,61 @@
 
 </head>
 <body>
-    <nav id="desktop-nav">
-        
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-        <div class="logo">Cath Salvargh</div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Cath Salvargh</div>
-        <div class="hamburger-menu" >
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+        <nav id="desktop-nav">
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <div class="logo">Cath Salvargh</div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Cath Salvargh</div>
+            <div class="hamburger-menu" >
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
             </div>
-        </div>
 
-    </nav>
+        </nav>
     <section id="profile">
-        <div class="section-container">
-            <div class="section-pic-container">
-                <img class="profile-pic" src="./assets/ID-pic-greenbback.png" alt="CS profile picture">
+            <div class="left">
+                <div class="section-pic-container">
+                    <img class="profile-pic" src="./assets/ID-pic-greenbback.png" alt="CS profile picture">
+                </div>
             </div>
-            <div class="section-text-container">    
-                <p class="t-p">Hi there, this is</p>
-                <h1 class="t-title">Catherine Salvargh</h1>
-                <p class="t-subtitle">Frontend Developer</p>
+
+            <div class="right">
+                <div class="section-text-container">    
+                    <p class="t-section-p">Hi there, this is</p>
+                    <h1 class="t-title">Catherine Salvargh</h1>
+                    <p class="t-subtitle">Frontend Developer</p>
+                
+                    <div class="btn-container">
+                            <button class="btn btn-color-2" onclick="window.open('./assets/CS-CV.pdf')">Download CV</button>
+                            <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact details</button>
+                    </div>
+                    <div id="socials-container">
+                        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/catherine-salvargh/'">
+                        <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/CatSalvargh'">
+                    </div>
+                </div>
+            </div>
             
-                <div class="btn-container">
-                        <button class="btn btn-color-2" onclick="window.open('./assets/CS-CV.pdf')">Download CV</button>
-                        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact details</button>
-                </div>
-                <div id="socials-container">
-                    <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/catherine-salvargh/'">
-                    <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/CatSalvargh'">
-                </div>
-            </div>
-        </div>
+        <!-- </div> -->
     </section>
+
     <script src="script.js"></script>
 </body>
 </html>

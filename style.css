@@ -20,16 +20,22 @@
     background-color: rgba(0,100,0, 0.07);
 } */
 
-body {
- font-family: "poppins", sans-serif;
- /* background-color: rgba(180,0,0, 0.1); */
- width: 95vw;
-}
-
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    font-size: 62.5%; /*make default size 10px for rem%*/
 }
+
+body {
+ font-family: "poppins", sans-serif;
+ display: flex;
+ flex-direction: column;
+ justify-items: center;
+ align-items: center;
+ /* background-color: rgba(180,0,0, 0.1); */
+}
+
+
 
 p {
     color: var(--darkgrey-p);
@@ -47,20 +53,22 @@ nav, .nav-links {
 }
 
 nav {
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 17vh;
+    width: 70%;
+    gap: 10%;
 }
 
 .nav-links {
     gap: 2rem;
     list-style: none;
-    font-size: 1.7rem;
 }
 
 a {
     padding: 20px;
-    color: black;
+    font-size: 3rem;    
+    color: var(--lightgrey-subt);
     font-weight: 600;
     text-decoration: none;
     text-decoration-color: white;
@@ -68,7 +76,7 @@ a {
 
 a:hover, .menu-links a:hover {
     color: var(--CyanC);
-    font-size: 1.5rem;
+    font-size: 3.5rem;
     text-decoration: underline;
     text-underline-offset: 0.8rem;
     text-decoration-color: rgb(12, 196);
@@ -77,8 +85,9 @@ a:hover, .menu-links a:hover {
 }
 
 .logo {
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-weight: 600;
+    max-width: 50%;
     color: rgb(58, 58, 58);
     cursor: default;
 }
@@ -165,42 +174,26 @@ a:hover, .menu-links a:hover {
 
 /* Section Styling */
 
-section {
-    height: 96vh;
-    width: 100vw;
-    padding: 10vw;
-    /* max-width: fit-content;
-    min-height: fit-content; */
-}
-
-.section-container, #socials-container, .section-text-container {
-    display: flex;   
+#profile, .section-text-container, .section-pic-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #profile {
+    height: 80vh;
+    gap: 10rem;
+}
+/*section image*/
+.section-pic-container {
+    width: min(600px, 40vw);
     justify-items: center;
     align-items: center;
-    gap: 2rem;
-    height: 96vh;
-    padding: 2em;
-    width: 100vw;
-}
-
-.section-container {
-    align-content: center;
-    justify-content: center;
-    gap: 2rem;
-    width: 96vw;
-}
-
-.section-pic-container, .section-text-container {
-    max-width: 25vw;
-    max-height: 25vh;
 }
 
 img {
-max-width: 100%;
-  object-fit: contain;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 .section-text-container {
@@ -209,39 +202,43 @@ max-width: 100%;
     justify-items: flex-start;
     align-items: center;
     flex: 1;
-    gap: 1em;
+    padding: 2rem;
 }
 
+/* Section text-socials container*/
 .t-title {
-    font-size: 2.5rem;
+    font-size: clamp(1rem, 5rem, 15vw);
     text-align: center;
 }
 
 .t-subtitle {
     color: var(--lightgrey-subt);
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
-.t-p {
-    color: var(--darkgrey-p);
-    font-weight: 500;
-    font-size: 1.2em;
+.t-section-p {
+    color: var(--lightgrey-subt);
+    /* font-weight: 500; */
+    font-size: 2.5rem;
 }
 
 
 #socials-container, .btn-container {
-    display: inline;
-    gap: 1rem;
+    display: inline-flex;
+    margin-top: 3rem;
+    gap: 2rem
 }
 
-/* Icons */
+/* ------ Icons -------- */
 
 .icon {
     cursor: pointer;
-    height: 3rem;
+    height: 5rem;
 }
 .icon:hover {
-    height: 4rem;
+    height: 6.5rem;
+    transition: all 3ms ease-in;
 }
 
 .btn {
@@ -249,11 +246,10 @@ max-width: 100%;
     border-radius: 2rem;
     background-color: white;
     border: (2px, solid, black);
-    font-size: 1.2rem;
+    font-size: 2.5em;
     font-weight: 500;
     transition: all 300ms ease;
     cursor: pointer;
-    margin-bottom: 10px;
  }
 
 
